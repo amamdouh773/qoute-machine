@@ -1,0 +1,90 @@
+.wrapperFade {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIIn 0.5s ease-in;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper .quote-box {
+  background-color: aliceblue;
+  border-radius: 5px;
+  width: 450px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper .quote-box .quote {
+  padding: 5px;
+  margin-bottom: 0;
+}
+
+.wrapper .quote-box .author {
+  margin-top: 10px;
+  margin-left: 300px;
+}
+
+.wrapper .quote-box .fadeQuote {
+  padding: 5px;
+  margin-bottom: 0;
+  animation: fadeIn ease 0.5s;
+}
+
+.wrapper .quote-box .fadeAuthor {
+  margin-top: 10px;
+  margin-left: 300px;
+  animation: fadeIn ease 0.5s;
+}
+
+.wrapper .quote-box .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper .quote-box .buttons .social button {
+  margin-left: 3px;
+  width: 35px;
+  font-size: 15px;
+}
+
+.wrapper .quote-box .buttons button {
+  background: none;
+  color: aliceblue;
+  outline: none;
+  padding: 10px;
+  width: 95px;
+  font-weight: bold;
+  border-radius: 3px;
+  cursor: pointer;
+  border: none;
+  margin-top: 15px;
+}
+
+.wrapper .quote-box .buttons button:hover {
+  opacity: 0.9;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
